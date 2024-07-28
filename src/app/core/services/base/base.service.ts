@@ -9,6 +9,7 @@ import { ApiResponse } from '../../models/base/apiResponse.model';
 })
 export class BaseService {
   constructor(private http: HttpClient) { }
+  
   Get(route: string) {
     return this.http.get<ApiResponse>(route)
       .pipe(
