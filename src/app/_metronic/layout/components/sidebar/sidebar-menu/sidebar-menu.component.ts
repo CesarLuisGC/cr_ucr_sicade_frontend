@@ -24,13 +24,13 @@ export class SidebarMenuComponent {
                 {
                   nombre: 'Sub-menu 1',
                   icono: 'element-plus',
-                  ruta: '',
+                  ruta: 'crafted/pages/profile/overview',
                   hijos: []
                 },
                 {
                   nombre: 'Sub-menu 2',
                   icono: 'element-plus',
-                  ruta: '',
+                  ruta: '/crafted/pages/profile/projects',
                   hijos: []
                 },
               ]
@@ -38,7 +38,7 @@ export class SidebarMenuComponent {
             {
               nombre: 'Menu 2',
               icono: 'element-plus',
-              ruta: '',
+              ruta: '/crafted/pages/profile/campaigns',
               hijos: []
             },
           ]
@@ -46,7 +46,7 @@ export class SidebarMenuComponent {
         {
           nombre: 'Roles',
           icono: 'element-plus',
-          ruta: '/crafted/pages/profile/overview',
+          ruta: 'builder',
           hijos: []
         },
       ]

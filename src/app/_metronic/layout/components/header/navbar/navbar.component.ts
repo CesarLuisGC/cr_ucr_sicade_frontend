@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { SesionService } from 'src/app/core/services/sesion/sesion.service';
 
 @Component({
   selector: 'app-navbar',
@@ -14,7 +15,7 @@ export class NavbarComponent implements OnInit {
   userAvatarClass: string = 'symbol-35px symbol-md-40px';
   btnIconClass: string = 'fs-2 fs-md-1';
 
-  constructor() {}
+  constructor(public _sesionService: SesionService) {}
 
   ngOnInit(): void {}
 }

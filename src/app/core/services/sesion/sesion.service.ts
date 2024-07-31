@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Sesion } from '../../models/base/sesion.model';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -7,6 +8,8 @@ import { Sesion } from '../../models/base/sesion.model';
 export class SesionService {
   public sesion: Sesion = new Sesion();
   private localStorage: string = "sesion"; 
+
+  constructor(private _router: Router) {}
 
   public GetSession(): void {
     let sessionStorage = this.GetStorage();
@@ -32,5 +35,20 @@ export class SesionService {
     let storage = localStorage.getItem(this.localStorage);
 
     return storage ? atob(storage) : null;
+  }
+
+  public RemoveStorage(): void {
+    localStorage.removeItem(this.localStorage);
+  }
+
+  public RemoveSession(){
+    this.sesion = new Sesion();
+  }
+
+  public Logout(): void{
+    this.RemoveSession();
+    this.RemoveStorage();
+
+    this._router.navigate(['/auth/login']);
   }
 }
