@@ -1,0 +1,38 @@
+<div class="d-flex flex-column flex-lg-row flex-column-fluid">
+
+  <div class="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-2 order-lg-1">
+    <div class="d-flex flex-center flex-column flex-lg-row-fluid">
+      <div class="w-75">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+
+    <div class="d-flex flex-center flex-wrap px-5">
+      <div class="d-flex fw-semibold text-primary fs-base">
+        <a href="#" class="px-5" target="_blank">Terms</a>
+
+        <a href="#" class="px-5" target="_blank">Plans</a>
+
+        <a href="#" class="px-5" target="_blank">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex flex-lg-row-fluid w-lg-50 bgi-size-cover bgi-position-center order-1 order-lg-2"
+    [ngStyle]="{'background-image': 'url(./assets/media/misc/auth-bg.png)'}">
+    <div class="d-flex flex-column flex-center pt-15 px-5 px-lg-15 w-100 pb-lg-15">
+      <a routerLink="/" class="mb-12">
+        <img alt="Logo" src="./assets/media/logos/ucr.png" class="h-75px" />
+      </a>
+
+      <h1 class="text-white fs-2qx fw-bolder text-center mb-7 d-none d-lg-block">
+        ¡Bienvenido de nuevo!
+      </h1>
+
+      <div class="text-white fs-base text-center d-none d-lg-block px-2">
+        Acceda a su cuenta para administrar sus preferencias,
+        realizar un seguimiento de su progreso y mantenerse conectado con nuestra comunidad.
+      </div>
+    </div>
+  </div>
+</div>

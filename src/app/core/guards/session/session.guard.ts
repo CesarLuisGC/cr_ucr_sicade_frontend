@@ -2,7 +2,7 @@ import { ActivatedRouteSnapshot, CanActivateFn, Router, RouterStateSnapshot } fr
 import { SesionService } from '../../services/sesion/sesion.service';
 import { inject } from '@angular/core';
 
-export const sessionGuard: CanActivateFn = (
+export const SessionGuard: CanActivateFn = (
   next: ActivatedRouteSnapshot,
   state: RouterStateSnapshot
 ) => {
