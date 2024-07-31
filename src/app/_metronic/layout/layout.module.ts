@@ -41,6 +41,7 @@ import { ExtendedComponent } from './components/toolbar/extended/extended.compon
 import { ReportsComponent } from './components/toolbar/reports/reports.component';
 import { SaasComponent } from './components/toolbar/saas/saas.component';
 import {SharedModule} from "../shared/shared.module";
+import { SidebarItemComponent } from './components/sidebar/sidebar-item/sidebar-item.component';
 
 const routes: Routes = [
   {
@@ -68,6 +69,7 @@ const routes: Routes = [
     SidebarLogoComponent,
     SidebarMenuComponent,
     SidebarFooterComponent,
+    SidebarItemComponent,
     NavbarComponent,
     AccountingComponent,
     ClassicComponent,
