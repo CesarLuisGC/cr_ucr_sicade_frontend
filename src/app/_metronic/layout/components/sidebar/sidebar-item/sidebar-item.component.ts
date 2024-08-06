@@ -9,8 +9,4 @@ import { NavItem } from 'src/app/core/models/base/navItem.model';
 export class SidebarItemComponent {
   @Input() hijo: NavItem = new NavItem();
   @Input() level: number = 1;
-
-  ngOnInit(){
-    console.log(this.hijo)
-  }
 }

@@ -13,7 +13,7 @@ export const SessionGuard: CanActivateFn = (
     return true;
   }
   
-  _router.navigate(['/']);
+  _router.navigate(['/auth/login']);
 
   return false;
 };

@@ -1,10 +1,10 @@
-import { Menu } from "./menu.model";
+import { NavMenu } from "./navMenu.model";
 import { Usuario } from "./usuario.model";
 
 export class Sesion {
     public token: string;
     public usuario: Usuario;
-    public menus: Menu[];
+    public menus: NavMenu[];
 
     constructor() {
         this.token = "";
